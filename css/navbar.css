@@ -1,0 +1,139 @@
+.navbar {
+  position: static;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 82px;
+  margin-top: 27px;
+}
+
+.navbar-wrap {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.hamb {
+  display: none;
+}
+
+.popup {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  width: 68px;
+  height: 68px;
+  background: #18a3dd;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.header-logo-text {
+  align-self: center;
+  padding-left: 80px;
+  font-family: 'Helvetica Neue Std - Hv';
+  font-size: 15px;
+  font-weight: 600;
+  color: #656973;
+}
+
+.menu > li > a {
+  text-decoration: none;
+}
+
+.navbar-wrap .menu {
+  display: flex;
+}
+
+.navbar-wrap .menu > li {
+  display: flex;
+  align-items: stretch;
+}
+
+.navbar-wrap .menu > li > a {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: rgba(101, 105, 115, 0.7);
+}
+
+.navbar-wrap .menu > li > a:hover {
+  color: rgba(101, 105, 115, 1);
+}
+
+@media (max-width: 1000px) {
+  .navbar-wrap .menu {
+    display: none;
+  }
+  .hamb {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamb-field {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #666666;
+    transition: 0,2s;
+  }
+  .popup {
+    display: flex;
+    position: fixed;
+    top: 82px;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 100;
+    transition: 0.3s;
+  }
+  .popup.open {
+    right: 0;
+  }
+  .popup .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    overflow: auto;
+  }
+  .popup .menu > li {
+    width: 100%;
+  }
+  .popup .menu > li > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333740;
+  }
+  .popup .menu > li > a:hover {
+    background-color: rgba(24, 163, 221, 0.1);
+  }
+  .hamb-field.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamb-field.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamb-field.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  body.noscroll {
+    overflow: hidden;
+  }
+}

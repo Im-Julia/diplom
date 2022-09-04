@@ -1,0 +1,71 @@
+
+body {
+  width: max-content;
+  /* height: 6654px; */
+  background-color: #fafcfc;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  margin: 0;
+}
+
+.delimeter-after,
+.delimeter-before {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+}
+
+
+.delimeter-s-after,
+.delimeter-s-before
+{
+  display: inline-block;
+  position: relative;
+  height: 40px;
+}
+
+.delimeter-after::after {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  top: 25px;
+  right: -24px;
+  background-color: #18a3dd;
+  border-radius: 2px;
+}
+
+.delimeter-before::before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  top: 25px;
+  left: -20px;
+  background-color: #18a3dd;
+  border-radius: 2px;
+}
+
+.delimeter-s-after::after {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: #18a3dd;
+  border-radius: 1px;
+}
+
+.delimeter-s-before::before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  left: -15px;
+  top: 10px;
+  background-color: #18a3dd;
+  border-radius: 1px;
+}
+

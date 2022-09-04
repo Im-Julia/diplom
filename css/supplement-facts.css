@@ -1,0 +1,159 @@
+.supplement-title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.supplement-title-bold {
+  display: flex;
+  align-items: baseline;
+}
+
+.supplement-title-bold-text {
+  margin-bottom: 15px;
+  padding-right: 20px;
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #333740;
+}
+
+.supplement-title-underline {
+  padding-left: 20px;
+  margin-bottom: 15px;
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #333740;
+}
+
+.supplement-title-simple {
+  display: flex;
+  justify-content: center;
+}
+
+.supplement-title-simple-text {
+  margin: 0;
+  padding-bottom: 78px;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #83888f;
+}
+
+.supplement-subtitle-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 65px;
+}
+
+.table-head {
+  border-bottom: 5px solid #333740;
+  border-radius: 10px;
+}
+
+.table-ingridients {
+  border-collapse: collapse;
+  margin-right: 110px;
+}
+
+
+.supplement-ingridients {
+  padding: 0 0 30px;
+  padding-right: 188px;
+  font-size: 24px;
+  line-height: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0.025em;
+}
+
+.supplement-measurement {
+  padding: 0 0 30px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 0.025em;
+}
+
+.supplement-ingridient-item {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #333740;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.supplement-ingridient-item:nth-last-child(1) {
+text-align: right;
+}
+
+.supplement-ingridient-item:hover {
+  color: #1d1d1d;
+}
+
+.supplement-info {
+  width: 360px;
+  height: 400px;
+}
+
+.supplement-info-image {
+  width: 110px;
+  height: 100px;
+  margin-bottom: 50px;
+  background-image: url(/img/green\ coffee.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.facts {
+  margin-bottom: 30px;
+}
+
+.delimeter-before-supplement:before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  top: 5px;
+  left: -20px;
+  background-color: #18a3dd;
+  border-radius: 2px;
+}
+
+.btn-download-container {
+  padding-left: 290px;
+  margin-bottom: 200px;
+}
+
+.btn-download {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 455px;
+  height: 50px;
+  background-color: #18a3dd;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #f1f1f1;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
